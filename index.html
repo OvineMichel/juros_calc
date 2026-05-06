@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Juros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo_ifsul_color.png" alt="Logo do Ifsul">
+        <p>
+           TADS 3
+           <br>
+           Vinicius Michel Rosa
+        </p>
+    </header>
+    <main>
+        <h1>Calculadora de juros Compostos</h1>
+        <div id="textos_intr">
+            <p>
+                Preencha as informações abaixo para exibir o resultado do cálculo desejado,
+                ou clique
+                <a href="https://www.santander.pt/salto/o-que-sao-juros-compostos">aqui</a>
+                para entender a lógica do juro composto.
+            </p>
+        </div>
+        <div id="container">
+            <div id="resultados">
+                <h1>Seus resultados aparecerão aqui</h1>
+            </div>
+            <form id="formulario">
+                <div class="linha-form"><input type="number" id="debito" placeholder="Débito inicial" min="0"><img src="assets/brazilian-real.png"></img></div>
+                <div class="linha-form"><input type="number" id="juros" placeholder="Juros" max="100" min="0"><img src="assets/discount.png"></div>
+                <div class="linha-form"><input type="number" id="meses" placeholder="Meses" min="1"><img src="assets/calendar.png"></div>
+                <div class="linha-form"><input type="number" id="multa" placeholder="Multa" min="0"><img src="assets/multa.png"></div>
+                <p>Adicionar multa após ou antes do cálculo?</p>
+                    <select id="opcoes" name="Adicionar_multa">
+                        <option value="1">Antes</option>
+                        <option value="2">Depois</option>
+                    </select>
+                <div class="linha-botoes">
+                    <button id="enviar" class="btn_operacao">Calcular</button>
+                    <button id="limpar" class="btn_operacao" type="button">Limpar Registros</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>

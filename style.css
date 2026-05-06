@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+ --verde: rgb(16, 155, 16);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter";
+    margin: 0;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: inherit;
+    margin: 0;
+}
+
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    box-shadow: 0 0 5px  rgb(158, 158, 158);
+}
+
+header > p{
+    white-space: normal;
+    text-align: right;
+    margin-right: 15px;
+    color: grey;
+    font-weight: 700;
+}
+
+header img[alt='Github']{
+    height: 5vh;
+    transition: 400ms ease-in-out;
+    padding-right: 10px;
+}
+
+header img[alt='Github']:hover{
+    height: 6vh;
+    cursor: pointer;
+}
+
+header img[alt='Logo do Ifsul']{
+    height: 8vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    gap: 5vh;
+}
+
+
+main>h1{
+    color: var(--verde);
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--verde);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#textos_intr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#textos_intr>p{
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    font-weight: 300;
+    width: 50vw;
+
+}
+
+#textos_intr> p > a{
+    color: green;
+    font-size: 20px;
+}
+
+#textos_intr> p > a:visited{
+    color: green;
+}
+
+
+#resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    gap: 10px;
+}
+
+#resultados > h1{
+    color: var(--verde);
+    font-weight: 400;
+}
+
+.linha-resultado-inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.linha-resultado-inicial > p{
+    padding: 10px;
+    width: 20vw;
+    color: var(--verde);
+    max-width: 300px;
+    text-align: center;
+    border: 3px solid var(--verde);
+}
+
+.linha-resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.linha-resultado > p{
+    padding: 10px;
+    width: 20vw;
+    color: rgb(105, 105, 105);
+    max-width: 300px;
+    text-align: center;
+    box-shadow: inset 2px 2px 10px rgb(0, 0, 0,0.1);
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.linha-form{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    box-shadow: inset 2px 2px 10px rgb(0, 0, 0,0.1);
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.linha-form input{
+    border: none;
+    background: none;
+    border-left: 3px solid var(--verde);
+    padding-left: 10px;
+    min-width: 30vw;
+    height: 40px;
+}
+
+.linha-form input[id='multa']{
+    border-left: 3px solid #ea2222;
+}
+
+.linha-form input:focus{
+    outline: none;
+}
+
+.linha-form img{
+    aspect-ratio: 1/1;
+    width: 3vh;
+    filter: contrast(0.3);
+}
+
+.linha-form > img[src='assets/multa.png']{
+}
+
+.linha-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.linha-botoes > button{
+    flex: 1;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease-in-out;
+}
+
+.linha-botoes > button:hover{
+    filter: brightness(0.8)
+}
+
+#enviar{
+    background-color: var(--verde);
+    color: white;
+}
+
+#limpar{
+    border: 2px solid var(--verde);
+    background-color: white;
+    color: var(--verde);
+}
+
+#opcoes{
+    border: none;
+    height: 40px;
+    background-color: rgba(0, 0, 0,0.1);
+    padding: 0 10px 0 10px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    header img[alt='Logo do Ifsul']{
+        height: 10vw;
+    }
+
+    main>h1{
+        font-size: 4vw;
+    }
+
+    #textos_intr>p{
+        font-size: 3vw;
+        width: 80vw;
+    }
+
+    .linha-form > input{
+        min-width: 206px;
+        width: 50vw;
+    }
+
+}
