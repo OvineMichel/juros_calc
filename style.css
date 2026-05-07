@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
- --verde: rgb(16, 155, 16);
+ --verde: #109B10;
 }
 
 *{
@@ -26,14 +26,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-left: 2vw;
-    box-shadow: 0 0 5px  rgb(158, 158, 158);
+    box-shadow: 0 0 5px  #9E9E9E;
 }
 
 header > p{
     white-space: normal;
     text-align: right;
     margin-right: 15px;
-    color: grey;
+    color: #9E9E9E;
     font-weight: 700;
 }
 
@@ -78,7 +78,7 @@ main>h1{
 }
 
 #textos_intr>p{
-    color: rgb(77, 77, 77);
+    color: #4D4D4D;
     font-size: 20px;
     font-weight: 300;
     width: 50vw;
@@ -86,12 +86,12 @@ main>h1{
 }
 
 #textos_intr> p > a{
-    color: green;
+    color: var(--verde);
     font-size: 20px;
 }
 
 #textos_intr> p > a:visited{
-    color: green;
+    color: var(--verde);
 }
 
 
@@ -100,7 +100,7 @@ main>h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px #00000033;
     padding: 20px;
     gap: 10px;
 }
@@ -135,10 +135,10 @@ main>h1{
 .linha-resultado > p{
     padding: 10px;
     width: 20vw;
-    color: rgb(105, 105, 105);
+    color: #696969;
     max-width: 300px;
     text-align: center;
-    box-shadow: inset 2px 2px 10px rgb(0, 0, 0,0.1);
+    box-shadow: inset 2px 2px 10px #00000033;
 }
 
 #formulario{
@@ -148,7 +148,7 @@ main>h1{
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px #00000033;
 }
 
 .linha-form{
@@ -156,7 +156,7 @@ main>h1{
     justify-content: center;
     align-items: end;
     gap: 10px;
-    box-shadow: inset 2px 2px 10px rgb(0, 0, 0,0.1);
+    box-shadow: inset 2px 2px 10px #00000033;
     display: flex;
     align-items: center;
     padding-right: 10px;
@@ -213,19 +213,19 @@ main>h1{
 
 #enviar{
     background-color: var(--verde);
-    color: white;
+    color: #FFFFFF;
 }
 
 #limpar{
     border: 2px solid var(--verde);
-    background-color: white;
+    background-color: #FFFFFF;
     color: var(--verde);
 }
 
 #opcoes{
     border: none;
     height: 40px;
-    background-color: rgba(0, 0, 0,0.1);
+    background-color: #00000033;
     padding: 0 10px 0 10px;
     width: 100%;
 }
