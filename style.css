@@ -230,8 +230,13 @@ main>h1{
     width: 100%;
 }
 
-.textoDiferenca{
+.textoResultado{
+    padding: 10px;
+    width: 20vw;
     color: var(--verde);
+    max-width: 300px;
+    text-align: center;
+    border: 3px solid var(--verde);
 }
 
 @media only screen and (max-width: 800px) {
