@@ -230,7 +230,9 @@ main>h1{
     width: 100%;
 }
 
-
+.textoDiferenca{
+    color: var(--verde);
+}
 
 @media only screen and (max-width: 800px) {
     header img[alt='Logo do Ifsul']{
