@@ -63,6 +63,7 @@ window.onload = function(){
         }
         let textoDiferenca = document.createElement('p');
         textoDiferenca.textContent = "Diferença final: +"+ Math.round(Number(debito - debitoInicial))+"R$";
+        textoDiferenca.classList.add('textoResultado');
         resultados.appendChild(textoDiferenca);
     })
 }
